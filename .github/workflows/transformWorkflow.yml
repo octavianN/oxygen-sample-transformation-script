@@ -40,11 +40,6 @@ jobs:
           env: # Or as an environment variable
            SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
           run: cd build; ./gradlew runTransformation -PinputFile="${{ github.event.inputs.inputFile }}" -PscenarioName="${{ github.event.inputs.scenarioName }}"  --info --stacktrace
-        - name: Transform file to PDF
-          env: # Or as an environment variable
-           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
-          run: cd build; ./gradlew runTransformation -PinputFile="${{ github.event.inputs.inputFile }}" -PscenarioName="DITA Map PDF - based on XSL-FO"  --info --stacktrace
-         
        
         - name: Deploy
           uses: JamesIves/github-pages-deploy-action@v4.4.1
