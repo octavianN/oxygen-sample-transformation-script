@@ -202,7 +202,7 @@
                                     <String>${pdu}/../../../transform/json/booksToHtml.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/transformScript.xpr</String>
+                                    <String></String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
